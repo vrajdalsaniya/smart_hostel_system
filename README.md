@@ -133,3 +133,4 @@ npm run seed         # insert secure demo data
 ## Production notes
 
 Set a strong unique `JWT_SECRET`, use a restricted database account, configure a production client origin, run the built client behind HTTPS, and use a durable object store for uploaded profile images.
+
