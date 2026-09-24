@@ -1,0 +1,44 @@
+/* Clear role choices on the public sign-in screen. */
+.role-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  padding: 5px;
+  margin: 0 0 20px;
+  border: 1px solid #e5e0ee;
+  border-radius: 12px;
+  background: #f7f5fa;
+}
+
+.role-switch button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 43px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #777187;
+  font-size: 12px;
+  font-weight: 700;
+  transition: background .18s, color .18s, box-shadow .18s;
+}
+
+.role-switch button.active {
+  color: var(--deep);
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(56, 45, 114, .1);
+}
+
+.role-switch button.active svg { color: var(--purple); }
+
+.forgot-link {
+  width: max-content;
+  margin-top: -3px;
+  color: var(--purple);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.forgot-link:hover { color: var(--deep); text-decoration: underline; }
